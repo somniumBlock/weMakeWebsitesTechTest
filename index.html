@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>We Make Websites Technical Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--  Load site stylesheets  -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="css/slick.css" rel="stylesheet" />
+    <link href="css/slick-theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <!--  Announcement banner / bar  -->
+    <div class="announcement-container">
+        <div id="announcement-bar">
+            <div class="container">
+                <div class="row">
+                    <!--  Currency buttons  -->
+                    <div class="col-xs-6 col-lg-2 col-md-6 col-sm-6">
+                        <div class="currency-buttons">
+                            <button id="gbp">GB</button>
+                            <button id="usd">USD</button>
+                        </div>
+                    </div>
+                    <!--  Announcement text  -->
+                    <div class="col-lg-8 hidden-tablet">
+                        <div class="main-text">
+                            <p>ANNOUNCE SOMETHING HERE</p>
+                        </div>
+                    </div>
+                    <!--  User location dropdown  -->
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6">
+                        <div class="location-dropdown">
+                            <select>
+                                <option>UK</option>
+                                <option>USA</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  Mobile announcement bottom bar  -->
+        <div id="mobile-announcement" class="hidden-desktop">
+            <div class="main-text">
+                <p>ANNOUNCE SOMETHING HERE</p>
+            </div>
+        </div>
+    </div>
+
+    <!--  Mobile shopping cart container  -->
+    <div class="mobile-cart-container"></div>
+
+    <!--  Navigation bar  -->
+    <header id="navigation-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!--  Website navigation bar  -->
+                    <div class="main-navigation">
+                        <nav class="navbar navbar-expand-lg static">
+                            <!--  Website / Company logo  -->
+                            <div class="company-logo">
+                                <a class="navbar-brand" href="javascript:void(0)">
+                                    <img src="img/logo-placeholder.png" />
+                                </a>
+                            </div>
+                            <!--  Mobile navigation button  -->
+                            <button class="navbar-toggler mobile-navigation" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <img src="img/svg/ic_drawer.svg" />
+                                </span>
+                            </button>
+                            <!--  Shopping cart icon / mobile right navigation  -->
+                            <div class="mobile-cart hidden-desktop">
+                                <ul>
+                                    <li>
+                                        <a class="mobile-cart-button"><img src="img/svg/bag.svg" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--  Bootstrap naviagtion menu  -->
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Collections
+                                        </a>
+                                        <!--  Sub navigation menu  -->
+                                        <div class="dropdown-menu sub-navigation hidden-tablet" aria-labelledby="navbarDropdownMenuLink">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <ul>
+                                                        <li><a href="">Collection 1</a></li>
+                                                        <li><a href="">Collection 2</a></li>
+                                                        <li><a href="">Collection 3</a></li>
+                                                        <li><a href="">Collection 4</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <ul>
+                                                        <li><a href="">Collection 1</a></li>
+                                                        <li><a href="">Collection 2</a></li>
+                                                        <li><a href="">Collection 3</a></li>
+                                                        <li><a href="">Collection 4</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu-image">
+                                                        <a href=""><img src="img/placeholder-image.png" /></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-3">
+                                                    <div class="menu-image">
+                                                        <a href=""><img src="img/placeholder-image.png" /></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Lookbook<span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">about<span class="sr-only">(current)</span></a>
+                                    </li>
+                                </ul>
+                                <!--  Right navigation menu / icons  -->
+                                <aside class="right-navigation">
+                                    <ul>
+                                        <li><a href=""><img src="img/svg/search.svg" /></a></li>
+                                        <li><a href=""><img src="img/svg/profile.svg" /></a></li>
+                                        <li><a href=""><img src="img/svg/heart.svg" /></a></li>
+                                        <li class="hidden-tablet shopping-cart-desktop">
+                                            <a href="" class="cart"><img src="img/svg/bag.svg" /></a>
+                                            <!--  Shopping Cart  -->
+                                            <div class="shopping-cart">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h4>Your Cart</h4>
+                                                        <!--  Shopping cart item -->
+                                                        <div class="cart-item">
+                                                            <div class="item-image">
+                                                                <img src="img/item-image-placeholder.png" />
+                                                            </div>
+                                                            <div class="item-details">
+                                                                <div class="title">
+                                                                    <p>Product Title</p>
+                                                                </div>
+                                                                <div class="delete-icon">
+
+                                                                </div>
+                                                                <div class="variant-name">
+                                                                    <p>Variant Name</p>
+                                                                </div>
+                                                                <div class="item-amount">
+                                                                    <span class="minus-counter">-</span>
+                                                                    <p class="counter">2</p>
+                                                                    <span class="plus-counter">+</span>
+                                                                </div>
+                                                                <div class="item-total">
+                                                                    <p>&pound;<span>60.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--  Shopping cart item -->
+                                                        <div class="cart-item">
+                                                            <div class="item-image">
+                                                                <img src="img/item-image-placeholder.png" />
+                                                            </div>
+                                                            <div class="item-details">
+                                                                <div class="title">
+                                                                    <p>Product Title</p>
+                                                                </div>
+                                                                <div class="delete-icon">
+
+                                                                </div>
+                                                                <div class="variant-name">
+                                                                    <p>Variant Name</p>
+                                                                </div>
+                                                                <div class="item-amount">
+                                                                    <span class="minus-counter">-</span>
+                                                                    <p class="counter">2</p>
+                                                                    <span class="plus-counter">+</span>
+                                                                </div>
+                                                                <div class="item-total">
+                                                                    <p>&pound;<span>60.00</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--  Shopping cart checkout button -->
+                                                        <div class="checkout-button">
+                                                            <button>Checkout</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </aside>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--  Main body for site content  -->
+    <main id="main-content" role="main">
+        <section class="image-carousel">
+            <!--  Slick slider container -->
+            <div class="main-slider">
+                <!--  Slick slider slide -->
+                <div class="slick-bg-image slide-item" style="background-image:url('img/Background.jpg')">
+                    <div class="text">
+                        <h1>Image Slider</h1>
+                        <p>Tell us your brand’s story through videos and images</p>
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <!--  Slick slider slide -->
+                <div class="slick-bg-image slide-item" style="background-image:url('img/Background.jpg')">
+                    <div class="text">
+                        <h1>Image Slider</h1>
+                        <p>Tell us your brand’s story through videos and images</p>
+                        <button>Explore</button>
+                    </div>
+                </div>
+                <!--  Slick slider slide -->
+                <div class="slick-bg-image slide-item" style="background-image:url('img/Background.jpg')">
+                    <div class="text">
+                        <h1>Image Slider</h1>
+                        <p>Tell us your brand’s story through videos and images</p>
+                        <button>Explore</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--  Load site javascript -->
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!--  Initialise slick slider -->
+    <script type="text/javascript">
+        $('.main-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            nextArrow: '<img class="slick-custom-arrows next" src="img/arrow-next.png" />',
+            prevArrow: '<img class="slick-custom-arrows prev" src="img/arrow-prev.png"/>',
+        });
+    </script>
+
+</body>
+</html>

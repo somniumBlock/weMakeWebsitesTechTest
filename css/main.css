@@ -1,0 +1,611 @@
+
+/* ==========================================================================
+   WE MAKE WEBSITES TECHNICAL TEST STYLES GO BELOW:
+   ========================================================================== */
+
+/***********************
+    FONT IMPORTS
+************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:500');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900');
+
+/***********************
+    GLOBAL STYLES
+************************/
+#main-content {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    top: 0;
+}
+
+/***************************
+    ANNOUNCEMENT BANNER
+****************************/
+#announcement-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #E9F0F7;
+    text-align: center;
+    padding: 10px 0;
+}
+    #announcement-bar .currency-buttons,
+    #announcement-bar .main-text,
+    #announcement-bar .location-dropdown {
+        display: inline-block;
+    }
+
+    #announcement-bar .currency-buttons {
+        float: left;
+    }
+        #announcement-bar .currency-buttons button {
+            width: 50px;
+            height: 27px;
+            border: 1px solid #2D4966;
+            background-color: transparent;
+            margin-right: 6px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 11px;
+            line-height: 1px;
+            cursor: pointer;
+        }
+            #announcement-bar .currency-buttons button:last-of-type {
+                margin-right: 0;
+            }
+    
+    #announcement-bar .main-text p {
+        font-family: "Roboto Mono";
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-bottom: 6px;
+        color: #191919;
+    }
+
+    #announcement-bar .location-dropdown {
+        float: right;
+    }
+        #announcement-bar .location-dropdown select {
+            background-color: transparent !important;
+            border: none !important;
+            font-family: Helvetica, sans-serif;
+            font-size: 12px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: url('../img/icon-down.png') no-repeat right #ddd;
+            padding-right: 25px;
+        }
+
+#mobile-announcement {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    background-color: #E9F0F7;
+    padding: 8px 0;
+}
+    #mobile-announcement .main-text {
+        font-size: 12px;
+    }
+
+/***************************
+    NAVIGATION BAR
+****************************/
+#navigation-bar {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+}
+
+.company-logo {
+    text-align: left;
+    padding: 29px 0 27px 0;
+    margin-right: 40px;
+}
+
+    #navigation-bar .navbar-toggler {
+        border: none;
+        background-color: none;
+        padding-left: 0;
+    }
+        #navigation-bar .navbar-toggler:focus {
+            outline: none;
+        }
+
+        #navigation-bar .navbar-toggler .navbar-toggler-icon {
+            width: auto;
+        }
+
+    #navigation-bar .main-navigation {
+        height: 120px;
+        background-color: #fff;
+    }
+        #navigation-bar .main-navigation nav ul {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #navigation-bar .main-navigation ul {
+            list-style-type: none;
+        }
+            #navigation-bar .main-navigation ul li a {
+                font-family: "Roboto Mono";
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                margin-bottom: 6px;
+                color: #2D4966;
+                text-transform: uppercase;
+            }
+
+        #navigation-bar .main-navigation .dropdown-toggle::after {
+            display: none;
+        }
+
+        #navigation-bar .main-navigation .navbar-expand-lg .navbar-nav .nav-link {
+            margin: 0 26px;
+        }
+
+        #navigation-bar .main-navigation .navbar {
+            padding: 0;
+        }
+
+.sub-navigation {
+    height: 280px;
+    border: 1px solid #EAEAEA;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.17);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.17);
+    top: 66px;
+    padding: 0;
+    z-index: 9999;
+}
+    .sub-navigation::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: -7px;
+        left: 620px;
+        z-index: 0;
+        background-color: white;
+        border: solid 1px transparent;
+        -ms-transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+        transform: rotate(45deg);
+        border-left-color: #EAEAEA;
+        border-top-color: #EAEAEA;
+    }
+
+    .sub-navigation .row {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sub-navigation ul {
+        padding: 60px 0;
+    }
+        .sub-navigation ul li a {
+            text-transform: none;
+            line-height: 40px;
+            color: #000;
+            text-decoration: none;
+        }
+
+    .sub-navigation .menu-image {
+        padding: 32px 0;
+        text-align: left;
+    }
+
+    #navigation-bar .right-navigation {
+        padding: 44px 0;
+        text-align: right;
+    }
+        #navigation-bar .right-navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+            #navigation-bar .right-navigation ul li {
+                display: inline-block;
+                margin: 0 6px;
+            }
+                #navigation-bar .right-navigation ul li:first-of-type {
+                    margin-left: 0;
+                }
+
+                #navigation-bar .right-navigation ul li:last-of-type {
+                    margin-right: 0;
+                }
+
+/***************************
+    SHOPPING CART
+****************************/
+.shopping-cart {
+    width: 358px;
+    position: absolute;
+    top: 100px;
+    right: -29px;
+    border: 1px solid #EAEAEA;
+    background-color: #fff;
+    border-radius: 0;
+    text-align: left;
+    font-family: "Roboto Mono";
+    font-weight: 500;
+    display: none;
+    padding: 42px 30px 36px 30px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.17);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.17);
+    z-index: 9999;
+}
+
+    .shopping-cart::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        top: -8px;
+        right: 34px;
+        z-index: 0;
+        background-color: white;
+        border: solid 1px transparent;
+        -ms-transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+        transform: rotate(45deg);
+        border-left-color: #EAEAEA;
+        border-top-color: #EAEAEA;
+    }
+
+    .shopping-cart .row {
+        width: 100%;
+        margin: 0 auto;
+    }
+        .shopping-cart .row .col-12 {
+            padding: 0;
+        }
+
+    .shopping-cart h4 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .shopping-cart .cart-item {
+        padding: 18px 0;
+        border-top: 1px solid #EAEAEA;
+    }
+        .shopping-cart .cart-item .item-image,
+        .shopping-cart .cart-item .item-details,
+        .shopping-cart .cart-item .item-details .title,
+        .shopping-cart .cart-item .item-details .delete-icon {
+            display: inline-block;
+            vertical-align: top;
+        }
+            .shopping-cart .cart-item .item-details {
+                padding-left: 8px;
+                vertical-align: top;        
+            } 
+                
+                .shopping-cart .cart-item .item-details .title p {
+                    margin-bottom: 0;
+                    line-height: 1;
+                }
+                
+                .shopping-cart .cart-item .item-details .variant-name {
+                    margin-top: -4px;
+                } 
+                    .shopping-cart .cart-item .item-details .variant-name p {
+                        font-size: 13px;
+                        color: #979797;
+                    }
+
+                .shopping-cart .cart-item .item-details .item-amount {
+                    padding-left: 10px;
+                } 
+                    .shopping-cart .cart-item .item-details .item-amount span,
+                    .shopping-cart .cart-item .item-details .item-amount p {
+                        display: inline-block;
+                        font-size: 16px;
+                        margin-bottom: 12px;
+                    }
+                        .shopping-cart .cart-item .item-details .item-amount span {
+                            cursor: pointer;
+                        }
+
+                .shopping-cart .cart-item .item-details .item-total p {
+                    font-size: 22px;
+                    line-height: 1;
+                    margin-bottom: 0;
+                }
+
+.checkout-button {
+    margin-top: 12px;
+}
+    .checkout-button button {
+        width: 100%;
+        height: 52px;
+        color: #fff;
+        background-color: #2D4966;
+        border: none;
+        font-family: Helvetica;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+.mobile-cart {
+    position: absolute;
+    right: 0;
+    top: 46px;
+}
+
+.cart-open {
+    display: block !important;
+}
+
+/******************************
+    CAROUSEL - SLICK SLIDER
+*******************************/
+.image-carousel {
+    overflow-x: hidden;
+}
+
+.slick-track {
+    width: 100%;
+}
+
+.slick-bg-image {
+    height: 672px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slide-item {
+    text-align: center;
+}
+    .slide-item .text {
+        padding: 225px 0;
+        color: #fff;
+    }
+        .slide-item .text h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            margin-bottom: 30px;
+        }
+
+        .slide-item .text p {
+            font-family: "Roboto Mono";
+            font-size: 18px;
+            letter-spacing: 0.4px;
+            margin-bottom: 42px;
+        }
+
+        .slide-item .text button {
+            width: 160px;
+            height: 52px;
+            background-color: #2D4966;
+            border: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: Helvetica, sans-serif;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+
+.slick-dots {
+    bottom: 46px;
+}
+    .slick-dots li button:before {
+        font-family: 'slick';
+        font-size: 16px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        opacity: .25;
+        color: rgba(255,255,255,0.6);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .slick-dots li.slick-active button:before {
+        font-size: 20px;
+    }
+
+.slick-custom-arrows {
+    position: absolute;
+    top: 48%;
+    z-index: 999;
+}
+    .slick-custom-arrows.next {
+        right: 82px;
+        cursor: pointer;
+    }
+    .slick-custom-arrows.prev {
+        left: 82px;
+        cursor: pointer;
+    }
+
+
+/******************************
+    MEDIA QUERIES
+*******************************/
+
+@media (min-width: 992px) {
+    .sub-navigation {
+        width: 900px;
+        left: -280px;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+
+    .menu-image {
+        padding: 71px 0 !important;
+    }
+        .menu-image img {
+            width: 100%;
+        }
+
+    .sub-navigation::before {
+        left: 388px;
+    }
+}
+
+@media (max-width: 991px) {
+    #announcement-bar {
+        height: 40px;
+        background-color: #CED9E4;
+        padding: 6px 0;
+    }
+   
+    .navbar-toggler {
+        position: absolute;
+        left: 0;
+        top: 45px;
+    }
+
+    .company-logo {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 42px);
+        margin-right: 0;
+    }
+        .company-logo a {
+            margin-right: 0;
+        }
+
+    .navbar-collapse {
+        position: relative;
+        top: 120px;
+    }
+
+    .hidden-tablet {
+        display: none !important;
+    }
+
+    .shopping-cart {
+        width: 100%;
+        position: absolute;
+        top: 195px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        box-shadow: none;
+    }
+        .shopping-cart::before {
+            display: none;
+        }
+}
+
+@media (min-width: 1200px) {
+    .sub-navigation {
+        width: 1069px;
+        left: -366px;
+    }
+
+    .menu-image {
+        padding: 56px 0 !important;
+    }
+
+    .menu-image img {
+        width: 100%;
+    }
+
+    .sub-navigation::before {
+        left: 472px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1430px;
+    }
+
+    .sub-navigation {
+        width: 1361px;
+        left: -514px;
+    }
+
+    .menu-image {
+        padding: 32px 0 !important;
+    }
+        .menu-image img {
+            width: auto;
+        }
+
+    .sub-navigation::before {
+        left: 620px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navigation-bar,
+    .main-navigation {
+        height: 70px;
+    }
+
+    .company-logo {
+        left: calc(50% - 30px);
+        padding: 8px 0;
+    }
+        .company-logo a img {
+            width: 55px;
+        }
+
+    .navbar-toggler {
+        top: 18px;
+    }
+
+    .col-xs-6 {
+        width: 50%;
+    }
+
+    .mobile-cart {
+        position: absolute;
+        right: 0;
+        top: 19px;
+    }
+
+    .shopping-cart {
+        top: 145px;
+    }
+
+    .slick-custom-arrows.next,
+    .slick-custom-arrows.prev {
+        display: none !important;
+    }
+
+    .slick-bg-image {
+        height: 484px;
+    }
+
+    .slide-item .text {
+        padding: 144px 0;
+    }
+        .slide-item .text h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .slide-item .text p {
+            font-size: 16px;
+            margin-bottom: 42px;
+        }
+
+    .slick-dots {
+        bottom: 16px;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: 92px;
+    }
+}
